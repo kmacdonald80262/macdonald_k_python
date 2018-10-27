@@ -59,26 +59,26 @@ while player is False:
 	elif player == "quit":
 			exit()
 	else:
-			print("Check your spelling... that's not a valid choice\n")
+		print("Check your spelling... that's not a valid choice\n")
 
 	if computer_choice_lives < 1:
-			print("YOU WIN THE GAME")
-	#userInput = input("Enter 'Yes' to restart or 'No' to exit")
+		print("YOU WIN THE GAME")
+		userInput = input("Enter 'Yes' to restart or 'No' to exit")
 		
-	#if userInput == "Yes":
-		#player=False
+		if userInput == "Yes":
+			player=False
 
-	#elif userInput == "No":
-		#exit()
+		elif userInput == "No":
+			exit()
 
 	if player_lives < 1:
 		print("YOU LOSE THE GAME")
-	#userInput = input("Enter 'Yes' to restart or 'No' to exit")
-	#if userInput == "Yes":
-		#player=False
+		userInput = input("Enter 'Yes' to restart or 'No' to exit")
+		if userInput == "Yes":
+			player=False
 
-	#elif userInput == "No":
-		#exit()
+		elif userInput == "No":
+			exit()
 
 		
 	player = False 
