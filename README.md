@@ -14,6 +14,8 @@ The rules are the same as the classic game:
 
 _**Choose your weapon wisely!**_
 
+**First person to 3 victories wins the game!**
+
 The computer chooses first; just follow the prompts.
 
 Built with [Python 3](https://www.python.org/download/releases/3.0)
