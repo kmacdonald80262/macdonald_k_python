@@ -27,6 +27,7 @@ while player is False:
 
 	if player == computer_choice:
 		print("Tie! You live to shoot another day")
+		print("Player Score", player_lives,"Computer Score", computer_choice_lives)
 
 
 
@@ -34,27 +35,33 @@ while player is False:
 		if computer_choice == "Paper":
 			print("You lose! Paper covers Rock")
 			player_lives = player_lives - 1
+			print("Player Score", player_lives,"Computer Score", computer_choice_lives)
 		
 		else:
 			print("You win!", player, "smashes", computer_choice)
 			computer_choice_lives = computer_choice_lives - 1
+			print("Player Score", player_lives,"Computer Score", computer_choice_lives)
 			
 
 	elif player == "Paper":
 		if computer_choice == "Scissors":
 			print("You lose! Scissors cuts Paper")
 			player_lives = player_lives - 1
+			print("Player Score", player_lives,"Computer Score", computer_choice_lives)
 		else:
 			print("You win!", player, "covers", computer_choice)
 			computer_choice_lives = computer_choice_lives - 1
+			print("Player Score", player_lives,"Computer Score", computer_choice_lives)
 
 	elif player == "Scissors":
 		if computer_choice == "Rock":
 			print("You lose! Rock crushes Scissors")
 			player_lives = player_lives - 1
+			print("Player Score", player_lives,"Computer Score", computer_choice_lives)
 		else:
 			print("You win!", player, "cuts", computer_choice)
 			computer_choice_lives = computer_choice_lives - 1
+			print("Player Score", player_lives,"Computer Score", computer_choice_lives)
 
 	elif player == "quit":
 			exit()
