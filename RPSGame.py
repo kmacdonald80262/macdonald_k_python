@@ -19,6 +19,7 @@ computer_choice_lives = 3
 # set up our loop
 while player is False:
 	#set player to True by making a selection
+	print("=====================================")
 	print("Choose your weapon!")
 	player = input("Rock, Paper or Scissors?\n")
 
@@ -73,7 +74,10 @@ while player is False:
 		userInput = input("Enter 'Yes' to restart or 'No' to exit")
 		
 		if userInput == "Yes":
+			player_lives = 3
+			computer_choice_lives = 3
 			player=False
+			computer_choice = choices[randint(0, 2)]
 
 		elif userInput == "No":
 			exit()
@@ -82,7 +86,10 @@ while player is False:
 		print("YOU LOSE THE GAME")
 		userInput = input("Enter 'Yes' to restart or 'No' to exit")
 		if userInput == "Yes":
+			player_lives = 3
+			computer_choice_lives = 3
 			player=False
+			computer_choice = choices[randint(0, 2)]
 
 		elif userInput == "No":
 			exit()
